@@ -188,6 +188,7 @@ function updateRow(userData) {
    cells[1].innerText = userData.id;
    cells[2].innerText = userData.recipe_id;
    cells[3].innerText = userData.ingredient_id;
+  returnAddBtn()
 }
   
   // удаление кнопки "Отмена" и изменение кнопки "Изменить" на кнопку "Добавить"

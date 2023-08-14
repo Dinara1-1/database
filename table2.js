@@ -1,6 +1,6 @@
-let ingredientList = JSON.parse(localStorage.getItem("ingredientList"));
+let ingredientList1 = JSON.parse(localStorage.getItem("ingredientList"));
 
-let ingredientList1 = [
+let ingredientList = [
    {
      id: 1,
      name: 'Спагетти',

@@ -183,6 +183,7 @@ let recList = [
       });
     
       updateRow(userData);
+        returnAddBtn()
     }
     
     // изменение данных в строке

@@ -226,6 +226,7 @@ function updateRow(userData) {
    cells[2].innerText = userData.quantity;
    cells[3].innerText = userData.unit;
    cells[4].innerText = userData.calories;
+   returnAddBtn()
 }
    
    // удаление кнопки "Отмена" и изменение кнопки "Изменить" на кнопку "Добавить"

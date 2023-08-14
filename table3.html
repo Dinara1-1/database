@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href=".../table.css"/> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src=".../table3.js"></script>
+        <title>Стажировка</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 class="title">Таблица рецептов-ингредиентов</h1>
+            <div class="link-wrapper">
+                <a class="link" href="table2.html" style="color: rgb(0, 0, 0);">Таблица ингредиентов</a>
+                <a class="link" href="index.html" style="color: rgb(0, 0, 0);">Таблица рецептов</a>
+            </div>
+        </div>
+        <div class="table-wrapper">
+        <table class="table">
+            <tr class="header-row">
+                <th class="first-column">id</th>
+                <th>Рецепт</th>
+                <th>Ингредиент</th>
+                <th>Действие</th>
+            </tr>
+           
+        <div class="container1">
+            <form id="newform">
+                <label for="recipe_id" id="select1">id рецепта:</label>
+                <select id="recipe_id" name="recipe_id">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <br>
+                <br>
+                <label for="ingredient_id" id="select1">id ингредиента:</label>
+                <select id="ingredient_id" name="ingredient_id">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                </select>
+                <div class="submit-btn-wrapper">
+                    <input id="submitBtn" type="submit" class="submit-btn" value="Добавить"><br><br>
+                </div>
+            </form>                
+        </div>
+        </table>     
+    </body>
+</html>
+
+

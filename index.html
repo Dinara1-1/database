@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href=".../table.css"/> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src=".../table1.js"></script>
+        <title>Стажировка</title>
+    </head>
+
+    <body>
+        <div class="container" id="head">
+            <h1 class="title">Таблица рецептов</h1>
+            <div class="link-wrapper">
+                <a class="link" href="table2.html" style="color: rgb(0, 0, 0);">Таблица ингредиентов</a>
+                <a class="link" href="table3.html" style="color: rgb(0, 0, 0);">Таблица рецептов-ингредиентов</a>
+            </div>
+        </div>
+        <div class="table-wrapper">
+            <table class="table">
+            <tr class="header-row">
+                <th class="first-column">id</th>
+                <th>Название</th>
+                <th>Описание</th>               
+                <th>Время приготовления</th>
+                <th>Количество порций</th>
+                <th>Калории</th>
+                <th>Действие</th>
+            </tr>
+            <div class="container1">
+                <form id="newform">
+                    <label for="name">Название:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Введите название блюда" class="form-input"><br>
+                    <label for="description">Описание:</label><br>
+                    <textarea id="description" name="description" placeholder="Введите описание блюда" class="form-input"></textarea><br>
+                    <label for="time">Время приготовления:</label><br>
+                    <input type="number" id="time" name="time" placeholder="Введите время приготовления в минутах" class="form-input"><br>
+                    <label for="portions">Количество порций:</label><br>
+                    <input type="number" id="portions" name="portions" placeholder="Введите количество порций" class="form-input"><br>
+                    <label for="calories">Калории:</label><br>
+                    <input type="number" id="calories" name="calories" placeholder="Введите количество калорий" class="form-input"><br>
+                    <div class="submit-btn-wrapper">
+                        <input id="submitBtn" type="submit" class="submit-btn" value="Добавить"><br><br>
+                    </div>
+                </form>
+            </div>
+        </table>
+        </div>
+    </body>
+</html>
+
+

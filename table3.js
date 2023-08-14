@@ -1,4 +1,6 @@
-let recipeIng = [
+const recipeIng = JSON.parse(localStorage.getItem("recipeIng"));
+
+let recipeIng1 = [
   {
    id: 1,
    recipe_id: 1,

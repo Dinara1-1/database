@@ -7,7 +7,6 @@ let recList = [
       description: "Блюдо из смеси взбитых яиц и молока, зажаренной на сковороде",
       time: "20 мин",
       portions: 3,
-      ingredients: "Молоко, яйца",
       calories: 300,
     },
     {
@@ -16,7 +15,6 @@ let recList = [
       description: "Холодное блюдо, состоящее из одного вида или смеси разных видов сочетающихся между собой нарезанных продуктов в заправке",
       time: "30 мин",
       portions: 3,
-      ingredients: "Огурцы, помидоры",
       calories: 120,
     },
     {
@@ -25,7 +23,6 @@ let recList = [
       description: "Простой и вкусный способ приготовления пасты с куриным филе",
       time: "1,5 ч",
       portions: 3,
-      ingredients: "Спагетти, куриное филе",
       calories: 750,
     },
     {
@@ -34,7 +31,6 @@ let recList = [
       description: "Рассыпчатый рис с жареной свининой и овощами",
       time: "2 ч",
       portions: 3,
-      ingredients: "Рис, свинина",
       calories: 900,
     }
   ]
@@ -63,9 +59,6 @@ let recList = [
       const portionsEl = document.createElement("td");
       portionsEl.innerText = userData?.portions;
   
-      const ingredientsEl = document.createElement("td");
-      ingredientsEl.innerText = userData?.ingredients;
-  
       const caloriesEl = document.createElement("td");
       caloriesEl.innerText = userData?.calories;
   
@@ -91,7 +84,7 @@ let recList = [
       const row = document.createElement("tr");
       row.setAttribute("id", userData?.id + "-row");
       row.classList.add("data-row");
-      row.append(idEl, nameEl, descriptionEl, timeEl, portionsEl, ingredientsEl, caloriesEl, actionEl);
+      row.append(idEl, nameEl, descriptionEl, timeEl, portionsEl, caloriesEl, actionEl);
       $(".table").append(row);
   }
   
@@ -125,9 +118,6 @@ let recList = [
       $("#portions").val(function () {
         return "";
       });
-      $("#ingredients").val(function () {
-        return "";
-      });
       $("#calories").val(function () {
         return "";
       });
@@ -150,11 +140,8 @@ let recList = [
       $("#portions").val(function () {
         return cells[4].innerText;
       });
-      $("#ingredients").val(function () {
-        return cells[5].innerText;
-      });
       $("#calories").val(function () {
-        return cells[6].innerText;
+        return cells[5].innerText;
       });
     
       // изменение текста кнопки "Добавить" на "Изменить"
@@ -193,8 +180,7 @@ let recList = [
       cells[2].innerText = userData.description;
       cells[3].innerText = userData.time;
       cells[4].innerText = userData.portions;
-      cells[5].innerText = userData.ingredients;
-      cells[6].innerText = userData.calories;
+      cells[5].innerText = userData.calories;
     }
     
     // удаление кнопки "Отмена" и изменение кнопки "Изменить" на кнопку "Добавить"

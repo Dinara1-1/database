@@ -1,0 +1,152 @@
+.header {
+    background-color: #bd8c7d;
+    color: #000;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    text-align: right;
+}
+
+.block1 {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px; 
+    border: #000 solid;
+}
+
+.flex-container {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 7%;
+}
+
+.heading {
+    display: flex;
+    text-align: end;
+    position: relative;
+    top: 205px;
+    left: -135px
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #edeef0;
+}
+
+.table-wrapper {
+    width: 80%;
+    margin: 16px auto;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+}
+
+.table th {
+  text-align: left;
+}
+
+.table tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.data-row:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.blue-text {
+    color: dodgerblue;
+}
+
+.form-wrapper {
+    width: fit-content;
+    margin: 16px auto;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.form-input {
+    height: 36px;
+    width: 200px;
+    padding: 0 16px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+.form-input:focus {
+    outline: none;
+    border: 1px solid dodgerblue;
+}
+
+.submit-btn-wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.submit-btn {
+    height: 36px;
+    padding: 0 16px;
+    margin: 0 auto;
+    background-color: #4bb34b;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.submit-btn-red {
+    background-color: red;
+}
+
+.table-btn {
+    cursor: pointer;
+    margin: 4px 0;
+}
+
+.table-btn:hover {
+   opacity: 50%;
+}
+
+.edit-btn {
+    color: dodgerblue;
+}
+
+.remove-btn {
+    color: red;
+}
+
+.container {
+    background-color: #065c7e;
+    color:rgb(0, 0, 0);
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+#select1 {
+    padding: 17px;
+    margin: 20px;
+    border: #000;
+    border-radius: 5px;
+}
+

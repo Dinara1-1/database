@@ -181,6 +181,7 @@ let recList = [
       cells[3].innerText = userData.time;
       cells[4].innerText = userData.portions;
       cells[5].innerText = userData.calories;
+        returnAddBtn()
     }
     
     // удаление кнопки "Отмена" и изменение кнопки "Изменить" на кнопку "Добавить"

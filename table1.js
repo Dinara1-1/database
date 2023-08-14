@@ -82,7 +82,7 @@ let recList = [
       removeEl.innerText = "Удалить";
       removeEl.classList.add("table-btn", "remove-btn");
       removeEl.onclick = function () {
-        removeRowFromTable(userData); 
+        removeRow(userData); 
       };
       
       actionEl.append(editEl, removeEl);
@@ -95,16 +95,13 @@ let recList = [
       $(".table").append(row);
   }
   
-  function removeRowFromTable(userData) {
-      const result = confirm("Вы действительно хотите удалить запись?")
-      if (result) {
-          recipeList = recipeList.filter((item) => item.id !== userData.id);
-          removeRow(userData)
-      }
-  }
-  
   function removeRow(userData) {
-      $("#" + userData?.id + "-row").remove();
+   $("#" + userData?.id + "-row").remove();
+   const index = recipeList.findIndex(n => n.id === userData?.id);
+   if (index !== -1) {
+    recipeList.splice(index, 1);
+   }
+   localStorage.setItem("recipeList", JSON.stringify(recipeList));
   }
   
   function adduser(data) {
